@@ -1,4 +1,4 @@
-package com.DTO;
+package com.Skyline.DTO;
 
 public class LoginDTO {
     private String email;

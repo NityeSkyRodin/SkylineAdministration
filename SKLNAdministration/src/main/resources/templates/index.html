@@ -9,7 +9,9 @@
 <header>
     <div class="company-name">SKLNAdministration</div>
     <img src="/Skyline.jpeg" alt="Company Logo" class="logo">
-    <a th:href="@{/login}" class="logout-button">Uitloggen</a>
+    <form th:action="@{/worker}" method="post">
+    <button type="submit" class="logout-button">logout</button>
+    </form>
 </header>
 
 <H1>Hello worker of: SKLNAdministration</H1>
