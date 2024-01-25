@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Worker:</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/index.css}" />
+</head>
+<body>
+<header>
+    <div class="company-name">SKLNAdministration</div>
+    <img src="/Skyline.jpeg" alt="Company Logo" class="logo">
+    <a th:href="@{/login}" class="logout-button">Uitloggen</a>
+</header>
+
+<H1>Hello worker of: SKLNAdministration</H1>
+<div class="infoWorker">
+    <p>U bent ingelogd als: <strong th:text="${valueName}"></strong></p>
+    <p>Uw rol is: <strong th:text="${valueRol}"></strong></p>
+    <p>Uw ID is: <strong th:text="${valueId}"></strong></p>
+    <p>Uw email is: <strong th:text="${valueEmail}"></strong></p>
+</div>
+</body>
+</html>

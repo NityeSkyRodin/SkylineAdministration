@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Worker:</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/login.css}" />
+</head>
+<body>
+<header>
+    <div class="company-name">SKLNAdministration</div>
+    <img src="/Skyline.jpeg" alt="Company Logo" class="logo">
+</header>
+
+<h1>Login</h1>
+<form th:action="@{/login}" th:object="${loginObject}" method="post">
+<input type="text" id="Email" name="Email"/><p>Email</p><br>
+<input type="password" id="Password" name="Password"/><p>Password</p><br>
+<button type="submit" class="login-button">Login</button>
+</form>
+</body>
+</html>
